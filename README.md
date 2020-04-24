@@ -10,11 +10,10 @@
 8. You need all the info in the setup instructions,
 9. Identity Provider Single Sign-On URL, x.509 certificate, idp issuer.
 10. Set the IDP SSO URL from step 9 to SAML_ENTRY_POINT in your .env
-8. In app.js in the ``` passport.use ``` line add  ``` cert: config.passport.saml.cert ```
-9. ``` npm install ```
-10. ``` npm start ```
-11. If your app is running on localhost this process won't work, try tunneling using [ngrok](https://ngrok.com/) or [localtunnel](https://github.com/localtunnel/localtunnel) that should be the url to use in step 6.
-12. ![You should see the following when you run your app](https://i.gyazo.com/74b3d20da3a3b5347abeb5edc4b0fb7e.gif)
+11. ``` npm install ```
+12. ``` npm start ```
+13. If your app is running on localhost this process won't work, try tunneling using [ngrok](https://ngrok.com/) or [localtunnel](https://github.com/localtunnel/localtunnel) that should be the url to use in step 6.
+14. ![You should see the following when you run your app](https://i.gyazo.com/74b3d20da3a3b5347abeb5edc4b0fb7e.gif)
 
 
 
