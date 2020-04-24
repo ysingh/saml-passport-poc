@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 const SamlStrategy = require('passport-saml').Strategy
 const config = require('./config')
+const fs = require('fs')
 
 const app = express()
 
@@ -15,6 +16,7 @@ passport.use(new SamlStrategy(
     path: config.passport.saml.path,
     entryPoint: config.passport.saml.entryPoint,
     issuer: config.passport.saml.issuer,
+    cert: fs.readFileSync(`./${config.passport.saml.cert}`).toString('utf-8')
   },
   (profile, done) => done(null, profile)
 ))

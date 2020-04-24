@@ -6,7 +6,10 @@
 4. Select the following ![select the options](https://i.gyazo.com/aaf93ef4ea1bffb9fe59a254b16ac75d.png)
 5. Name your app ![name your app](https://i.gyazo.com/c76751f939844de0597efc5396d60d39.png)
 6. SAML options ![saml](https://i.gyazo.com/f9d27d83acd3d39d1dec9252235626b5.png) - Replace the sso/recipient/destination URL with the url for your app
-7. Download the app certificate and add it to the .env as SAML_CERT.
+7. Once your app is setup go to sign on page and read the instructions. Click the button [to view setup instructions](https://i.gyazo.com/e2987507dddc0df6d04708807b1545d4.png)
+8. You need all the info in the setup instructions,
+9. Identity Provider Single Sign-On URL, x.509 certificate, idp issuer.
+10. Set the IDP SSO URL from step 9 to SAML_ENTRY_POINT in your .env
 8. In app.js in the ``` passport.use ``` line add  ``` cert: config.passport.saml.cert ```
 9. ``` npm install ```
 10. ``` npm start ```
