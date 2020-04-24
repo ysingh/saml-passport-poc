@@ -5,12 +5,13 @@
 3. Once in classic UI go to applications and add applications -> create new application.
 4. Select the following ![select the options](https://i.gyazo.com/aaf93ef4ea1bffb9fe59a254b16ac75d.png)
 5. Name your app ![name your app](https://i.gyazo.com/c76751f939844de0597efc5396d60d39.png)
-6. SAML options ![saml](https://i.gyazo.com/f9d27d83acd3d39d1dec9252235626b5.png)
-- Replace the sso/recipient/destination URL with the url for your app
+6. SAML options ![saml](https://i.gyazo.com/f9d27d83acd3d39d1dec9252235626b5.png) - Replace the sso/recipient/destination URL with the url for your app
 7. Download the app certificate and add it to the .env as SAML_CERT, in app.js in the passport use line add cert: config.passport.saml.cert
-7. If your app is running on localhost this process won't work, try tunneling using [ngrok](https://ngrok.com/) or [localtunnel](https://github.com/localtunnel/localtunnel) that should be the url to use in step 6.
-8. npm start
-8. ![You should see the following when you run your app](https://i.gyazo.com/74b3d20da3a3b5347abeb5edc4b0fb7e.gif)
+8. If your app is running on localhost this process won't work, try tunneling using [ngrok](https://ngrok.com/) or [localtunnel](https://github.com/localtunnel/localtunnel) that should be the url to use in step 6.
+9. npm start
+10. ![You should see the following when you run your app](https://i.gyazo.com/74b3d20da3a3b5347abeb5edc4b0fb7e.gif)
+
+
 
 # SAML NOTES
 
