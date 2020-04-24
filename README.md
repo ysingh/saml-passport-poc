@@ -1,4 +1,4 @@
-# TO get this app to run locally
+# To get this app to run locally
 
 1. You need to create a new [Okta developer acount](https://developer.okta.com/)
 2. Once you have a developer acount, log into it and above the Okta logo on the top left corner you should see ``` < > Developer Console ```, hover over it and you should be able to see Classic UI. Switch to Classic UI.
