@@ -18,6 +18,7 @@
 
 
 # SAML NOTES
+![SAML FLOW](https://i.gyazo.com/467fc632e162ff992566d8df6f946aaa.png)
 
 - XML based
 - SP - Service Provider (the app)
