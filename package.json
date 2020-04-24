@@ -1,0 +1,22 @@
+{
+  "name": "passport-saml",
+  "version": "1.0.0",
+  "description": "SAML authentication using passport.js",
+  "main": "app.js",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "passport": "^0.4.1",
+    "passport-saml": "^1.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Yudhishthir Singh",
+  "license": "ISC"
+}
